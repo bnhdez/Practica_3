@@ -12,10 +12,12 @@ namespace Ejercicio_3
             Console.WriteLine("Ingrese 'mensual' o 'quincenal' dependiendo de su sueldo");
             pago = Console.ReadLine();
 
+            //este switch nos permite escoger si el proceso sera en base a un salario mensual o quincenal
             switch (pago)
             {
                 case ("mensual"):
                     {
+                        //primer proceso que dara paso a un ciclo while
                         Console.WriteLine("Ingrese su sueldo o -1 para salir: ");
                         sueldo = double.Parse(Console.ReadLine());
 
@@ -47,6 +49,7 @@ namespace Ejercicio_3
 
                             Console.WriteLine("La retencion es de: " + retencion);
                         }
+                        //mientras no se ingrese -1 en el sueldo, el ciclo sigue
                         while (sueldo != -1)
                         {
                             Console.WriteLine("Ingrese su sueldo o -1 para salir: ");
