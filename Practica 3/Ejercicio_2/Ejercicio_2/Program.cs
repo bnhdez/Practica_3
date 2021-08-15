@@ -6,14 +6,33 @@ namespace Ejercicio_2
     {
         static void Main(string[] args)
         {
-            int cont = 1, pass;
+            int n = 0, pass;
             string user;
             
-            Console.WriteLine("Ingrese su usuario: ");
-            user = Console.ReadLine();
-            Console.WriteLine("Ingrese su contrasena numerica: ");
-            pass = int.Parse(Console.ReadLine());
+            // n servira como contador de numero de intentos
+            while (n != 3)
+            {
+                Console.WriteLine("Ingrese su usuario: ");
+                user = Console.ReadLine();
+                Console.WriteLine("Ingrese su contraseña numerica: ");
+                pass = int.Parse(Console.ReadLine());
 
+                //condicion if en caso ingrese usuario y contraseña correcta
+                if ((user == "usuario1") && (pass == 123))
+                {
+                    Console.WriteLine("BIENVENIDO!");
+                    n = 3;
+                }
+                else
+                {
+                    //el ciclo continua hasta llegar a los 3 intentos
+                    n = n + 1;
+                    if (n == 3)
+                    {
+                        Console.WriteLine("Error de contraseña. Consulte con administrador del sistema");
+                    }
+                } 
+            }
         }
     }
 }
