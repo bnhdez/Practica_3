@@ -6,7 +6,14 @@ namespace Ejercicio_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int cont = 1, pass;
+            string user;
+            
+            Console.WriteLine("Ingrese su usuario: ");
+            user = Console.ReadLine();
+            Console.WriteLine("Ingrese su contrasena numerica: ");
+            pass = int.Parse(Console.ReadLine());
+
         }
     }
 }
