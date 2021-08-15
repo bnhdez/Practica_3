@@ -13,9 +13,9 @@ namespace Ejercicio_1
 
             while (contador <= 10)
             {
-                prod = num * prod;
+                prod = num * contador;
 
-                Console.WriteLine("La multiplicacion es "+ num +"x"+ contador, "=", prod);
+                Console.WriteLine("La multiplicacion es "+ num +"x"+ contador+ "="+ prod);
 
                 contador = contador + 1;
             }
